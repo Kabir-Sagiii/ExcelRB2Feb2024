@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a[target="_blank"] {
+        color: red;
+      }
+      a[target="_parent"] {
+        color: green;
+      }
+
+      input[type="text"] {
+        background-color: green;
+      }
+      input[placeholder="password"] {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 100px">
+      <a href="Home.html" target="_blank">Home</a>
+
+      <a href="Home.html" target="_parent">Profile</a>
+
+      <a href="Home.html" target="_parent">Products</a>
+
+      <input type="text" placeholder="username" />
+
+      <input type="password" placeholder="password" />
+    </div>
+  </body>
+</html>

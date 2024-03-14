@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      button:disabled {
+        color: red;
+        background-color: black;
+      }
+
+      button:hover {
+        background-color: brown;
+        border: none;
+        color: white;
+      }
+
+      input:checked {
+        outline: 2px solid red;
+      }
+
+      ol li:first-child {
+        color: green;
+      }
+      ol li:last-child {
+        color: blue;
+      }
+      ol li:nth-child(3) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Not Disabled</button>
+    <button disabled>Disabled</button>
+    <input type="checkbox" />HTML
+
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>React</li>
+      <li>Java</li>
+    </ol>
+  </body>
+</html>
