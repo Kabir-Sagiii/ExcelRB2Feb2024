@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+.nav {
+  background-color: black;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+}
+.leftColumn {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightColumn {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a,
+h2 {
+  color: white;
+  text-decoration: none;
+}
+a {
+  margin-right: 50px;
+}
+
+.mainsection1 {
+  display: flex;
+  margin-top: 150px;
+}
+.leftPanel {
+  width: 40%;
+  text-align: center;
+}
+.rightPanel {
+  width: 60%;
+}
+img {
+  border-radius: 50%;
+}
