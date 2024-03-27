@@ -1,0 +1,22 @@
+.container {
+  width: 800px;
+  height: 400px;
+
+  margin: 50px auto;
+  display: grid;
+  /* grid-template-columns: 200px 200px 200px 200px; */
+  grid-template-columns: repeat(4, 200px); /* 5 */
+  grid-template-rows: repeat(2, 200px); /* 3 */
+  /* column-gap: 20px; */
+  /* row-gap: 20px; */
+  /* gap: 20px; */
+}
+.child1 {
+  background-color: lightcoral;
+}
+.child2 {
+  background-color: lightseagreen;
+}
+.child3 {
+  background-color: lightpink;
+}

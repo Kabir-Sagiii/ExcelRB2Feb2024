@@ -1,0 +1,14 @@
+.myBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 5px;
+}
+.myBtn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#title {
+  color: red;
+  text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @keyframes images {
+        0% {
+          background-image: url("https://i.pinimg.com/originals/b8/5e/9d/b85e9df9e9b75bcce3a767eb894ef153.jpg");
+        }
+        25% {
+          background-image: url("https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg");
+        }
+        50% {
+          background-image: url("https://i.pinimg.com/originals/77/71/68/7771683223d86b237a3304d6f32828b9.jpg");
+        }
+        75% {
+          background-image: url("https://th.bing.com/th/id/OIP.K77dPgrHemZZloIRXIJIeQHaLG?rs=1&pid=ImgDetMain");
+        }
+        100% {
+          background-image: url("https://i.pinimg.com/originals/c7/6b/3f/c76b3f38a6b60c338d6534b4eacc9af2.jpg");
+        }
+      }
+      .container {
+        width: 500px;
+        height: 400px;
+        box-shadow: 0 0 10px black;
+        margin: 50px auto;
+        background-image: url("https://i.pinimg.com/originals/b8/5e/9d/b85e9df9e9b75bcce3a767eb894ef153.jpg");
+        background-size: 500px 400px;
+        background-position: center;
+        animation-name: images;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>

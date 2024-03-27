@@ -1,0 +1,24 @@
+@media only print {
+  button {
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen {
+  button {
+    margin-top: 100px;
+    margin-left: 100px;
+    /* margin: 100px auto; */
+  }
+  #print {
+    border: 2px solid red;
+  }
+
+  #screen {
+    border: 4px solid green;
+  }
+  p {
+    color: red;
+  }
+}
