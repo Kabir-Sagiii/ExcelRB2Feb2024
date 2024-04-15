@@ -1,0 +1,2 @@
+function printPrime() {}
+printPrime();
