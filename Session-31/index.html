@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="index-2.js"></script> -->
+    <script src="querySelectorAll.js"></script>
+    <style>
+      .container {
+        width: 500px;
+        padding: 70px 30px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        margin: 100px auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container myclass">
+      <h2 class="myclass">Input Element</h2>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        id="password"
+        class="myclass"
+      />
+      <input type="text" placeholder="Enter Name" id="name" class="myclass" />
+
+      <button onclick="getInputValue()">Show Value</button>
+    </div>
+  </body>
+</html>

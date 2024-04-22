@@ -1,0 +1,21 @@
+.cardRed {
+  width: 250px;
+  padding: 13px;
+  box-shadow: 0 0 10px red;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.cardGreen {
+  width: 250px;
+  padding: 13px;
+  box-shadow: 0 0 10px green;
+  text-align: center;
+  margin: 20px auto;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
