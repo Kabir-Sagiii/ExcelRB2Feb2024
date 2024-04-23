@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #root {
+        width: 500px;
+        padding: 50px 30px;
+        text-align: center;
+        box-shadow: 0 0 10px green;
+        margin: 30px auto;
+      }
+    </style>
+    <script>
+      function createDomElement() {
+        var divRef = document.getElementById("root");
+
+        var pDomElement = document.createElement("p");
+        pDomElement.innerText = "My first Paragraph in JS";
+
+        divRef.appendChild(pDomElement);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root">
+      <h2>Creating DOM Element</h2>
+      <button onclick="createDomElement()">Create Dom Element</button>
+    </div>
+  </body>
+</html>

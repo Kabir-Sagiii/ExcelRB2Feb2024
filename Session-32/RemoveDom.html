@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #root {
+        width: 500px;
+        padding: 50px 30px;
+        text-align: center;
+        box-shadow: 0 0 10px green;
+        margin: 30px auto;
+      }
+    </style>
+    <script>
+      function removeDomElement() {
+        var pRef = document.querySelector("p");
+        var h2Ref = document.querySelector("h2");
+
+        var h1Ref = document.createElement("h1");
+        h1Ref.innerText = "h2 is placed by h1";
+
+        pRef.remove();
+        h2Ref.replaceWith(h1Ref);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root">
+      <h2>Remove DOM Element</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae non
+        sint, doloremque id distinctio soluta eum quos excepturi ullam et ab
+        dolorem aspernatur ratione. Consectetur, odit suscipit! Unde soluta
+        cumque deserunt explicabo nulla facilis sequi quis et quo cupiditate
+        optio, ducimus necessitatibus esse, voluptas possimus qui maiores
+        voluptates consectetur deleniti, nemo aliquam accusantium dicta. Enim
+        nihil est a deleniti necessitatibus, non incidunt, commodi asperiores
+        quia dolores minus aspernatur ipsa placeat suscipit cumque natus
+        obcaecati nesciunt ad quasi, iure hic porro. Atque aperiam soluta
+        architecto quas distinctio a deleniti illo. Rerum sed optio totam
+        voluptas eveniet soluta vero provident doloribus?
+      </p>
+      <button onclick="removeDomElement()">Remove Dom Element</button>
+    </div>
+  </body>
+</html>
