@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html onclick="dummy2()">
+  <head>
+    <script>
+      function dummy() {
+        alert("dummy is called");
+      }
+
+      function dummy2() {
+        alert("dummy-2 is called");
+      }
+    </script>
+    <link rel="stylesheet" href="Task.css" />
+  </head>
+  <body>
+    <div id="GrandParent">
+      <h3>Grand Parent</h3>
+      <div id="Parent">
+        <h3>Parent</h3>
+        <div id="Child">
+          <h3>Child</h3>
+          <button onclick="dummy()">Click Me</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

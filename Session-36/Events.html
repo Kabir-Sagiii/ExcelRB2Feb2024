@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function postData() {
+        //Some 100 lines code
+      }
+
+      function getData() {
+        alert("Events are Triggered");
+      }
+
+      function dbclick() {
+        alert("double clicked");
+      }
+
+      function fnkeydown() {
+        console.log("keydown event is triggered");
+      }
+      function fnkeyup() {
+        console.log("keyup event is triggered");
+      }
+
+      function fnmouseenter() {
+        console.log("onmouse enter");
+      }
+      function fnmouseleave() {
+        console.log("onmouse leave");
+      }
+      function mousemove() {
+        console.log("mouse move ");
+      }
+
+      function fnLoad() {
+        document.querySelector("h2").style.color = "Green";
+      }
+    </script>
+  </head>
+  <body onload="fnLoad()">
+    <h2
+      ondblclick="dbclick()"
+      onmouseenter="fnmouseenter()"
+      onmouseleave="fnmouseleave()"
+      onmousemove="mousemove()"
+    >
+      Event in Javascript
+    </h2>
+    <input type="checkbox" onchange="getData()" />Check <br /><br />
+    <button onclick="getData()">Event Concept</button>
+    <input
+      type="text"
+      placeholder="Enter Some Text"
+      onkeyup="fnkeyup()"
+      onkeydown="fnkeydown()"
+    />
+  </body>
+</html>
