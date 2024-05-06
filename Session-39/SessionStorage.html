@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function updateData() {
+        sessionStorage.setItem("name", "Sneha");
+        sessionStorage.setItem("password", "Sneha@123");
+      }
+
+      function removeData() {
+        sessionStorage.removeItem("password");
+      }
+
+      function storeData() {
+        var inputTextDomElement = document.querySelector("#name");
+        var inputPasswordDomElement = document.querySelector("#password");
+
+        var inputTextData = inputTextDomElement.value;
+        var inputPasswordData = inputPasswordDomElement.value;
+
+        sessionStorage.setItem("name", inputTextData);
+        sessionStorage.setItem("password", inputPasswordData);
+      }
+
+      function getData() {
+        var username = sessionStorage.getItem("name");
+        var userpassword = sessionStorage.getItem("password");
+
+        var p1DomElement = document.getElementById("p1");
+        var p2DomElement = document.getElementById("p2");
+
+        p1DomElement.innerText = "Name: " + username;
+        p2DomElement.innerText = "Password: " + userpassword;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Session Storage</h2>
+    <input type="text" placeholder="Enter Data" id="name" /><br /><br />
+    <input
+      type="password"
+      placeholder="Enter Password"
+      id="password"
+    /><br /><br />
+    <button onclick="storeData()">Insert Data</button>
+    <button onclick="getData()">Get Data</button>
+    <button onclick="updateData()">Update Data</button>
+    <button onclick="removeData()">Remove Data</button>
+
+    <p id="p1">Name:</p>
+    <p id="p2">Password:</p>
+  </body>
+</html>

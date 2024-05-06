@@ -5,7 +5,14 @@
       function fnAddEventListener() {
         var buttonDomElement = document.querySelector("button");
 
-        buttonDomElement.addEventListener("click", fnaddedEventListener);
+        buttonDomElement.addEventListener("click", fnaddedEventListener, {
+          capture: false,
+        });
+        buttonDomElement.addEventListener("click", divfn, { capture: false });
+      }
+
+      function divfn() {
+        alert("divfn is called");
       }
 
       function fnaddedEventListener() {
@@ -20,15 +27,17 @@
     </script>
   </head>
   <body>
-    <h2>Dynamic Events: addEventListerner()</h2>
-    <button>Without Event Listener</button>
+    <div>
+      <h2>Dynamic Events: addEventListerner()</h2>
+      <button>Without Event Listener</button>
 
-    <input name="events" type="radio" onchange="fnAddEventListener()" />Add
-    Event Listener
-    <input
-      name="events"
-      type="radio"
-      onchange="fnremoveEventListener()"
-    />Remove Event Listener
+      <input name="events" type="radio" onchange="fnAddEventListener()" />Add
+      Event Listener
+      <input
+        name="events"
+        type="radio"
+        onchange="fnremoveEventListener()"
+      />Remove Event Listener
+    </div>
   </body>
 </html>

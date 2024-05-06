@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function CheckUser() {
+        try {
+          var inputDomElement = document.querySelector("input");
+          var pDomElement = document.querySelector("p");
+          var inputContent = inputDomElement.value;
+          console.log(inputDomElement);
+          if (inputDomElement === null) {
+            throw Error("Something Went Wrong");
+          } else {
+            if (
+              inputContent === "rohan" ||
+              inputContent === "riya" ||
+              inputContent === "sneha" ||
+              inputContent === "rajkumar"
+            ) {
+              pDomElement.innerText = "Valid User";
+              pDomElement.style.color = "green";
+              pDomElement.style.fontSize = "32px";
+            } else {
+              throw Error("Invalid User");
+            }
+          }
+        } catch (error) {
+          if (inputDomElement === null) {
+            pDomElement.innerText = "Something Went Wrong";
+            pDomElement.style.color = "red";
+            pDomElement.style.fontSize = "32px";
+          } else {
+            pDomElement.innerText = error;
+            pDomElement.style.color = "red";
+            pDomElement.style.fontSize = "32px";
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div style="padding: 50px">
+      <h2>Check Valid /Invalid User</h2>
+      <input type="text" placeholder="Add Name" />
+      <button onclick="CheckUser()">Submit</button>
+      <p></p>
+    </div>
+  </body>
+</html>

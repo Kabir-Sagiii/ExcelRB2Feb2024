@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function changeH2Content() {
+        try {
+          var h2DomElement = document.getElementById("title");
+
+          h2DomElement.innerText = "Content Got Updated with try and catch";
+          h2DomElement.style.color = "green";
+          h2DomElements.style.textAlign = "center";
+        } catch (error) {
+          console.log(error);
+          var h1DomElement = document.createElement("h1");
+          h1DomElement.innerText = "Something Went Wrong, Try After Sometime";
+          h1DomElement.style.color = "red";
+          h1DomElement.style.textAlign = "center";
+
+          document.querySelector("div").remove();
+
+          document.querySelector("body").appendChild(h1DomElement);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2 id="title">try and catch</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ratione
+        mollitia, omnis quibusdam ex cum dicta, vel sit possimus non labore
+        facere fuga! Obcaecati nisi, aperiam accusantium ipsam in eveniet
+        ratione similique dolore. Pariatur deserunt atque ipsam ipsum
+        perspiciatis optio nostrum repellat veritatis inventore impedit, ullam
+        harum. Ab, vitae dolore. Blanditiis atque provident doloribus veritatis.
+        Dolorem distinctio quibusdam eos autem repudiandae officia est quam, eum
+        repellat ad nesciunt quas expedita facilis nam provident, ipsum hic
+        alias? Repellat iusto voluptatum dolor autem blanditiis doloremque non a
+        perspiciatis aut modi cupiditate totam similique quod, reprehenderit
+        distinctio nesciunt, numquam quia ratione pariatur sint?
+      </p>
+      <button onclick="changeH2Content()">Get Para</button>
+    </div>
+  </body>
+</html>
