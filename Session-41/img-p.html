@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <script>
+      var imgReactElement = React.createElement("img", {
+        src: "https://th.bing.com/th/id/OIP.kLuVl7_2soHqjgecM56X2AHaLL?rs=1&pid=ImgDetMain",
+        width: "300",
+        height: "300",
+      });
+
+      var pReactElement = React.createElement(
+        "p",
+        null,
+        "This User is From USA"
+      );
+
+      var divReactElement = React.createElement("div", null, [
+        imgReactElement,
+        pReactElement,
+      ]);
+
+      ReactDOM.render(divReactElement, document.getElementById("container"));
+    </script>
+  </body>
+</html>

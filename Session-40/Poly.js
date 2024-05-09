@@ -26,6 +26,7 @@ class B extends A {
     this.changeId();
     super.changeId();
   }
+
   changeId(id) {
     super.changeId();
     console.log("Previous Id", this.id);
