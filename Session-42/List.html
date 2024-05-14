@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function CreateList() {
+        return (
+          <div>
+            <h2>Mobile BrandName </h2>
+            <ol>
+              <li> Apple</li>
+              <li> Samsung </li>
+              <li>Oneplus </li>
+              <li>Vivo </li>
+              <li>Oppo</li>
+            </ol>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div>
+            <CreateList />
+            <CreateList />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Main />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        box-shadow: 0 0 10px red;
+        width: 230px;
+        padding: 10px;
+      }
+      #box {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var userCard = (
+        <div id="card">
+          <img
+            src="https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg"
+            width="100%"
+            height="200"
+          />
+          <h3>Chris John </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <button>Profile </button>
+        </div>
+      );
+
+      var container = (
+        <div id="box">
+          <div id="card">
+            <img
+              src="https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg"
+              width="100%"
+              height="200"
+            />
+            <h3>Chris John </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>Profile </button>
+          </div>
+          <div id="card">
+            <img
+              src="https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg"
+              width="100%"
+              height="200"
+            />
+            <h3>Chris John </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>Profile </button>
+          </div>
+          <div id="card">
+            <img
+              src="https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg"
+              width="100%"
+              height="200"
+            />
+            <h3>Chris John </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>Profile </button>
+          </div>
+        </div>
+      );
+
+      var reuseCard = (
+        <div id="box">
+          {userCard} {userCard} {userCard} {userCard}
+        </div>
+      );
+
+      ReactDOM.render(reuseCard, document.getElementById("root"));
+    </script>
+  </body>
+</html>

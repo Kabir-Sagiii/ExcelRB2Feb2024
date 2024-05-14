@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        box-shadow: 0 0 10px red;
+        width: 230px;
+        padding: 10px;
+      }
+      #box {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createCard(url) {
+        return (
+          <div id="card">
+            <img src={url} height="200" />
+            <h3>Chris John </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>Profile </button>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div id="box">
+            {createCard(
+              "https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg"
+            )}
+            {createCard(
+              "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1"
+            )}
+            {createCard(
+              "https://i.pinimg.com/736x/07/44/76/074476f844838fb2487a9d7b4d08a904.jpg"
+            )}
+            {createCard(
+              "https://th.bing.com/th/id/R.5653029516aa1da33d2413221590388a?rik=ds9OhhdLBtMhZw&riu=http%3a%2f%2fwww.eikonphoto.com%2fwp-content%2fuploads%2f2017%2f03%2fmale-headshot-tie-color-e1515795186596.jpg&ehk=VY7pXCiuy4VhN8KGTN3eniSIRRE7XOPsS1HLsIjqA24%3d&risl=&pid=ImgRaw&r=0"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(App(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
