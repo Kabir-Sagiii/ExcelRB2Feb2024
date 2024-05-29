@@ -1,0 +1,7 @@
+.newuserContainer {
+  width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px blue;
+  padding: 20px;
+  text-align: center;
+}
